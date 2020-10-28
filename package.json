@@ -3,7 +3,7 @@
     "displayName": "discord.py Code Snippets",
     "description": "Some code snippets for the discord.py package in python",
     "version": "1.0.0",
-    "publisher": "Wasi Master",
+    "publisher": "WasiMaster",
     "repository": {
         "type": "git",
         "url": "https://github.com/wasi-master/vscode-discord.py-snippets"

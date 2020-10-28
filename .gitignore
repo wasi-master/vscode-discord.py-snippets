@@ -123,3 +123,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VSIX File
+discord-py-snippets-1.0.0.vsix
