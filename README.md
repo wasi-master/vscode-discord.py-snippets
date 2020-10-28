@@ -9,23 +9,23 @@ A simple snippets extension for the [discord.py]("https://discordpy.readthedocs.
 
 ### Making a cog
 
-![Cog Example]("https://i.imgur.com/gIWNM5E.gif")
+![Cog Example](https://i.imgur.com/gIWNM5E.gif)
 
 ### Making a command
 
-![Command Example]("https://i.imgur.com/jUQZywQ.gif")
+![Command Example](https://i.imgur.com/jUQZywQ.gif)
 
 ### Starter Template
 
-![Starter Example]("https://i.imgur.com/AcoHPfb.gif")
+![Starter Example](https://i.imgur.com/waHtA9I.gif)
 
 ### Making a event
 
-![Event Example]("https://i.imgur.com/waHtA9I.gif")
+![Event Example](https://i.imgur.com/AcoHPfb.gif)
 
 ### Using the library aiohttp to use a api in a command
 
-![AioHTTP Example]("https://i.imgur.com/LVZVq33.gif")
+![AioHTTP Example](https://i.imgur.com/LVZVq33.gif)
 
 <!-- ## Extension Settings
 
@@ -47,6 +47,10 @@ There isn't many snippets so any suggestions for snippets would be appreciated
 ### 1.0.0
 
 Initial release of discord.py-snippets
+
+### 1.0.1
+
+Fix some bugs
 
 -----------------------------------------------------------------------------------------------------------
 
