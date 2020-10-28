@@ -125,4 +125,4 @@ dmypy.json
 .pyre/
 
 # VSIX File
-discord-py-snippets-1.0.0.vsix
+*.vsix
