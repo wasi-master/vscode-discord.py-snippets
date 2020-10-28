@@ -1,0 +1,84 @@
+{
+    "discord.py Starter Template":{
+        "prefix": "!dpstrt",
+        "body": [
+            "import discord",
+            "from discord.ext import commands",
+            "",
+            "",
+            "bot = commands.Bot(command_prefix=\"${1:!}\")",
+            "",
+            "@bot.command()",
+            "async def test(ctx):",
+            "    await ctx.send(\"Test\")",
+            "",
+            "bot.run(\"${2:Token}\")",
+            ""
+        ],
+        "description": "A starter template"
+    },
+    "discord.py Basic Command Template":{
+        "prefix": "!cmd",
+        "body": [
+            "@${1|bot,client|}.command()",
+            "async def ${2:test}(ctx$3):",
+            "    await ctx.send(\"$0\")"
+        ],
+        "description": "A basic command template (Not for cogs)"
+    },
+    "discord.py Basic Event Template":{
+        "prefix": "!evt",
+        "body": [
+            "@${1|bot,client|}.event",
+            "async def ${2:on_message}($3):",
+            "    $0"
+        ],
+        "description": "A basic event template (Not for cogs)"
+    },
+    "discord.py Cog Command Template":{
+        "prefix": "!cgcmd",
+        "body": [
+            "@commands.command()",
+            "async def ${1:test}(self, ctx):",
+            "    await ctx.send(\"$0\")"
+        ],
+        "description": "A basic command template for cogs"
+    },
+    "discord.py Cog Event Template":{
+        "prefix": "!cgevt",
+        "body": [
+            "@commands.Cog.listener()",
+            "async def ${1:on_ready}(self, $2):",
+            "    $0"
+        ],
+        "description": "A basic event template for cogs"
+    },
+    "discord.py Cog Template": {
+        "prefix": "!cog",
+        "body": [
+            "import discord",
+            "from discord.ext import commands",
+            "",
+            "",
+            "class ${1:CogName}(commands.Cog):",
+            "    def __init__(self, bot):",
+            "        self.bot = bot",
+            "",
+            "    $0",
+            "",
+            "def setup(bot):",
+            "    bot.add_cog(${1:CogName}(bot))",
+            ""
+        ],
+        "description": "A starter template for a cog"
+    },
+    "aiohttp Basic Usage Template":{
+        "prefix": "!ahtp",
+        "body": [
+            "async with ${1|bot,client,self.bot,self.client|}.session.get(\"$2\") as r:",
+            "    resp = await r.json()",
+            "    $0"
+        ],
+        "description": "You need to have bot.session defined as a instance of aiohttp.ClientSession"
+    }
+}

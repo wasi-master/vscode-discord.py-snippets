@@ -1,0 +1,26 @@
+{
+    "name": "discord-py-snippets",
+    "displayName": "discord.py Code Snippets",
+    "description": "Some code snippets for the discord.py package in python",
+    "version": "1.0.0",
+    "publisher": "Wasi Master",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wasi-master/vscode-discord.py-snippets"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
