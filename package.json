@@ -12,6 +12,18 @@
     "engines": {
         "vscode": "^1.50.0"
     },
+    "keywords": [
+        "discord.py",
+        "discord.js",
+        "discord",
+        "JDA",
+        "discord bot",
+        "discord snippets",
+        "discord.py snippets",
+        "discord.js snippets",
+        "discord.py code snippets",
+        "discord.js code snippets"
+    ],
     "categories": [
         "Snippets"
     ],
