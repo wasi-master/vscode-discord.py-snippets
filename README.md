@@ -51,7 +51,7 @@ This extension contributes the following settings:
 | aiohttp Template                            |    `!ahtp`   | A basic aiohttp web request template (You need to have bot.session defined as a instance of aiohttp.ClientSession)  |
 | Global Check Template                       |    `gbchk`   | A basic global check template                                                                                       |
 | Cog Check Template                          |   `!cgchk`   | A basic cog check template                                                                                          |
-| Embed Help                                  |  `embedhelp` | A custom help command implementation that modifies the default help and uses embed                                  |
+| Embed Help                                  |  `!embedhelp` | A custom help command implementation that modifies the default help and uses embed                                  |
 
 ## Tips and Tricks
 
