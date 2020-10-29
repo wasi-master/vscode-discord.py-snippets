@@ -126,3 +126,7 @@ dmypy.json
 
 # VSIX File
 *.vsix
+
+# vscode settings
+.vscode/settings.json
+

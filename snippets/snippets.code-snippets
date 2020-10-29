@@ -80,5 +80,38 @@
             "    $0"
         ],
         "description": "You need to have bot.session defined as a instance of aiohttp.ClientSession"
+    },
+    "discord.py Global Check Template":{
+        "prefix": "!gbchk",
+        "body": [
+            "@${1|bot,client|}.check",
+            "async def ${2:bot_check}(ctx):",
+            "    $0"
+        ],
+        "description": "A basic global check template"
+    },
+    "discord.py Cog Check Template":{
+        "prefix": "!cgchk",
+        "body": [
+            "async def cog_check(self, ctx):",
+            "    $0",
+            "    if $1:",
+            "        return True",
+            "    else:",
+            "        return False",
+        ],
+        "description": "A basic cog check template"
+    },
+    "discord.py Embed Help":{
+        "prefix": "!embedhelp",
+        "body": [
+            "class MyNewHelp(commands.MinimalHelpCommand):",
+            "async def send_pages(self):",
+            "    destination = self.get_destination()",
+            "    for page in self.paginator.pages:",
+            "        embed = discord.Embed(description=page)",
+            "        await destination.send(embed=embed)"
+        ],
+        "description": "A custom help command implementation that modifies the default help and uses embed"
     }
 }
