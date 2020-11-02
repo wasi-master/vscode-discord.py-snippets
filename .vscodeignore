@@ -3,3 +3,6 @@
 .gitignore
 .gitattributes
 vsc-extension-quickstart.md
+*.py
+*.vsix
+examples/**

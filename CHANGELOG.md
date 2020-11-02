@@ -10,7 +10,18 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 - Fix some bugs
 
-### [1.1.0]
+## [1.1.0]
 
-Add 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp`
-Add more info in the readme file
+- Add 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp`
+- Add more info in the readme file
+
+## [1.2.0]
+
+- Add not shadowing command snippets (for function names for commands that are already defined eg. eval)
+- Add embed snippets
+  - embed
+  - field
+  - footer
+  - author
+  - image
+  - thumbnail

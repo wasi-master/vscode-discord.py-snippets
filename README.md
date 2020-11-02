@@ -38,7 +38,9 @@ This extension contributes the following settings:
 * `myExtension.enable`: enable/disable this extension
 * `myExtension.thing`: set to `blah` to do something -->
 
-## All snippets
+## All Snippets
+
+### Normal Snippets
 
 | Name                                        | Prefix       | Description                                                                                                         |
 |---------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------|
@@ -51,7 +53,20 @@ This extension contributes the following settings:
 | aiohttp Template                            |    `!ahtp`   | A basic aiohttp web request template (You need to have bot.session defined as a instance of aiohttp.ClientSession)  |
 | Global Check Template                       |    `gbchk`   | A basic global check template                                                                                       |
 | Cog Check Template                          |   `!cgchk`   | A basic cog check template                                                                                          |
-| Embed Help                                  |  `!embedhelp` | A custom help command implementation that modifies the default help and uses embed                                  |
+| Embed Help                                  | `!embedhelp` | A custom help command implementation that modifies the default help and uses embed                                  |
+| Not Shadowing Command Template              |  `!unscmd`   | A basic command template that doesn't shadow another function (Not for cogs)                                        |
+| Cog Not Shadowing Command Template          | `!cgunscmd`  | A basic command template that doesn't shadow another function for cogs                                              |
+
+### Embed Snippets
+
+| Name                                        | Prefix       | Description                  |
+|---------------------------------------------|--------------|------------------------------|
+| Embed Template                              |   `!emb`     | Makes a Embed                |
+| Embed Field Template                        | `!embfield`  | Adds a field to a embed      |
+| Embed Footer Template                       |  `!embfoot`  | Adds a footer to a embed     |
+| Embed Author Template                       | `!embauthor` | Adds a author to a embed     |
+| Embed Thumbnail Template                    |  `!embthumb` | Adds a image to a embed      |
+| Embed Image Template                        |  `!embimg`   | Adds a thumbnail to a embed  |
 
 ## Tips and Tricks
 
@@ -61,6 +76,11 @@ This extension contributes the following settings:
 ## Known Issues
 
 There isn't many snippets so any suggestions for snippets would be appreciated
+
+## Contribute
+
+You can open a pull request anytime and I will look into it <br>
+I suggest seeing the [vscode snippets documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets) before you open a pull request
 
 ## Release Notes
 
@@ -74,12 +94,23 @@ Fix some bugs
 
 ### 1.1.0
 
-Add 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp`
+Add 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp` <br>
 Add more info in the readme file
 
+### [1.2.0]
+
+- Add not shadowing command snippets (for function names for commands that are already defined)
+- Add embed snippets
+  - embed
+  - field
+  - footer
+  - author
+  - image
+  - thumbnail
+  
 ### Extensions in the screenshots
 
-- [Monokai](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) by [monokai](https://marketplace.visualstudio.com/publishers/monokai)
+- [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) by [monokai](https://marketplace.visualstudio.com/publishers/monokai)
 
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) by [CoenraadS](https://marketplace.visualstudio.com/publishers/CoenraadS)
 

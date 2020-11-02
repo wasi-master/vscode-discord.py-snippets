@@ -26,6 +26,15 @@
         ],
         "description": "A basic command template (Not for cogs)"
     },
+    "discord.py Not Shadowing Command Template":{
+        "prefix": "!unscmd",
+        "body": [
+            "@${1|bot,client|}.command(name=\"${2:test}\")",
+            "async def _${2:test}(ctx$3):",
+            "    await ctx.send(\"$0\")"
+        ],
+        "description": "A basic command template that doesn't shadow another function (Not for cogs)"
+    },
     "discord.py Basic Event Template":{
         "prefix": "!evt",
         "body": [
@@ -39,10 +48,19 @@
         "prefix": "!cgcmd",
         "body": [
             "@commands.command()",
-            "async def ${1:test}(self, ctx):",
+            "async def ${1:test}(self, ctx$2):",
             "    await ctx.send(\"$0\")"
         ],
         "description": "A basic command template for cogs"
+    },
+    "discord.py Cog Not Shadowing Command Template":{
+        "prefix": "!cgunscmd",
+        "body": [
+            "@commands.command(name=\"${2:test}\")",
+            "async def _${2:test}(self, ctx$3):",
+            "    await ctx.send(\"$0\")"
+        ],
+        "description": "A basic command template that doesn't shadow another function for cogs"
     },
     "discord.py Cog Event Template":{
         "prefix": "!cgevt",
@@ -113,5 +131,45 @@
             "        await destination.send(embed=embed)"
         ],
         "description": "A custom help command implementation that modifies the default help and uses embed"
+    },
+    "discord.py Embed Template":{
+        "prefix": "!emb",
+        "body": [
+            "embed = discord.Embed(${1:title=\"$2\",} ${3:description=\"$4\",} ${5:color=$6,}, ${7:timestamp=$8,})"
+        ],
+        "description": "Makes a Embed"
+    },
+    "discord.py Embed Field Template":{
+        "prefix": "!embfield",
+        "body": [
+            "${1:embed}.add_field(name=\"$2\", value=\"$3\", inline=${4|True,False|})"
+        ],
+        "description": "Adds a field to a embed"
+    },
+    "discord.py Embed Footer Template":{
+        "prefix": "!embfoot",
+        "body": [
+            "${1:embed}.set_footer(text=\"$2\", ${3:icon_url=\"${4}\"})"
+        ],
+        "description": "Adds a footer to a embed"
+    },
+    "discord.py Embed Author Template":{
+        "prefix": "!embauthor",
+        "body": [
+            "${1:embed}.set_author(name=\"$2\", ${3:url=\"${4}\",} ${5:icon_url=\"${6}\"})"
+        ],
+        "description": "Adds a author to a embed"
+    },
+    "discord.py Embed Thumbnail Template":{
+        "prefix": "!embthumb",
+        "body": [
+            "${1:embed}.set_thumbnail(url=\"$2\")"
+        ]
+    },
+    "discord.py Embed Image Template":{
+        "prefix": "!embimg",
+        "body": [
+            "${1:embed}.set_image(url=\"$2\")"
+        ]
     }
 }
