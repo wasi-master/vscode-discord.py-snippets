@@ -107,7 +107,11 @@ Add more info in the readme file
   - author
   - image
   - thumbnail
-  
+
+### [1.2.1]
+
+- Fix a issue in the `!emb` snippet where there were double commas
+
 ### Extensions in the screenshots
 
 - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) by [monokai](https://marketplace.visualstudio.com/publishers/monokai)
