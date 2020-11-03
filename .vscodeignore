@@ -1,9 +1,17 @@
+# vscode files
 .vscode/**
 .vscode-test/**
+# github files
 .github/**
 .gitignore
 .gitattributes
-vsc-extension-quickstart.md
+# testing files
 *.py
 *.vsix
+# examples
 examples/**
+# markdown files
+vsc-extension-quickstart.md
+LICENSE
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
