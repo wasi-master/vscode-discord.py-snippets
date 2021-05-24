@@ -135,7 +135,7 @@
     "discord.py Embed Template":{
         "prefix": "!emb",
         "body": [
-            "embed = discord.Embed(${1:title=\"$2\",} ${3:description=\"$4\",} ${5:color=$6:,} ${7:timestamp=$8,})"
+            "embed = discord.Embed(${1:title=\"$2\",} ${3:description=\"$4\",} ${5:color=$6,} ${7:timestamp=$8,})"
         ],
         "description": "Makes a Embed"
     },

@@ -97,7 +97,7 @@ Fix some bugs
 Add 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp` <br>
 Add more info in the readme file
 
-### [1.2.0]
+### 1.2.0
 
 - Add not shadowing command snippets (for function names for commands that are already defined)
 - Add embed snippets
@@ -108,9 +108,13 @@ Add more info in the readme file
   - image
   - thumbnail
 
-### [1.2.1]
+### 1.2.1
 
 - Fix a issue in the `!emb` snippet where there were double commas
+
+### 1.2.2
+
+- Fix a issue in the `!emb` snippet where there was a : where there shouldn't be one
 
 ### Extensions in the screenshots
 

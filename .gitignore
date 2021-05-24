@@ -127,8 +127,11 @@ dmypy.json
 # VSIX File
 *.vsix
 
-# vscode settings
-.vscode/settings.json
+# vscode history folder
+.history/
+
+# vscode settings folder
+.vscode
 
 # .py files used for testing
 *.py

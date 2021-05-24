@@ -29,3 +29,7 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 ### [1.2.1]
 
 - Fix a issue in the `!emb` snippet where there were double commas
+
+### [1.2.2]
+
+- Fix a issue in the `!emb` snippet where there was a : where there shouldn't be one
