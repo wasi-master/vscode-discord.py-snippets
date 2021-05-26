@@ -3,7 +3,14 @@
 
 # What is discord-py-snippets
 
-A simple snippets extension for the [discord.py]("https://discordpy.readthedocs.io/en/latest/") package for [python]("https://www.python.org")
+A simple snippets extension for the [discord.py](https://discordpy.readthedocs.io/en/latest/ "discord.py Documentation") package for [python](https://www.python.org "python.org")
+
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets">
+    <img alt="VS Code Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/WasiMaster.discord-py-snippets"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets">
+    <img alt="VS Code Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/WasiMaster.discord-py-snippets"></a>
+</p>
 
 ## Features
 
@@ -80,7 +87,7 @@ There isn't many snippets so any suggestions for snippets would be appreciated
 ## Contribute
 
 You can open a pull request anytime and I will look into it <br>
-I suggest seeing the [vscode snippets documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets) before you open a pull request
+I suggest seeing the [vscode snippets documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets "VSCode Snippets Documentation") before you open a pull request
 
 ## Release Notes
 
