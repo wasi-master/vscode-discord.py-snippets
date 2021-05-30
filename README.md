@@ -10,8 +10,6 @@ A simple snippets extension for the [discord.py](https://discordpy.readthedocs.i
     <img alt="VS Code Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/WasiMaster.discord-py-snippets"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets">
     <img alt="VS Code Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/WasiMaster.discord-py-snippets"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets">
-    <img alt="Extension Version" src="https://img.shields.io/visual-studio-marketplace/v/wasimaster.discord-py-snippets"></a>
 </p>
 
 ## Features
