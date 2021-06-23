@@ -8,17 +8,17 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 ## [1.0.1]
 
-- Fix some bugs
+- Fixed some bugs
 
 ## [1.1.0]
 
-- Add 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp`
-- Add more info in the readme file
+- Added 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp`
+- Added more info in the readme file
 
 ## [1.2.0]
 
-- Add not shadowing command snippets (for function names for commands that are already defined eg. eval)
-- Add embed snippets
+- Added not shadowing command snippets (for function names for commands that are already defined eg. eval)
+- Added embed snippets
   - embed
   - field
   - footer
@@ -28,8 +28,17 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 ### [1.2.1]
 
-- Fix a issue in the `!emb` snippet where there were double commas
+- Fixed a issue in the `!emb` snippet where there were double commas
 
 ### [1.2.2]
 
-- Fix a issue in the `!emb` snippet where there was a : where there shouldn't be one
+- Fixed a issue in the `!emb` snippet where there was a : where there shouldn't be one
+
+### [1.3.0]
+
+- Added Group Template `!grp`
+- Added Group command Template `!grpcmd`
+- Made event names always start with `on_`
+- Made it easier to add commands with aliases
+- Changed the command in `!dpstrt` from `test` to `hello`
+- Made it easier to know what a value is for

@@ -62,7 +62,9 @@ This extension contributes the following settings:
 | Cog Check Template                          |   `!cgchk`   | A basic cog check template                                                                                          |
 | Embed Help                                  | `!embedhelp` | A custom help command implementation that modifies the default help and uses embed                                  |
 | Not Shadowing Command Template              |  `!unscmd`   | A basic command template that doesn't shadow another function (Not for cogs)                                        |
-| Cog Not Shadowing Command Template          | `!cgunscmd`  | A basic command template that doesn't shadow another function for cogs                                              |
+| Cog Not Shadowing Command Template          |  `!cgunscmd` | A basic command template that doesn't shadow another function for cogs                                              |
+| Group Template                              |    `!grp`    | A group template (Can be used in cogs)                                                                              |
+| Group Command Template                      |   `!grpcmd`  | A basic group command template (Can be used in cogs)                                                                |
 
 ### Embed Snippets
 
@@ -87,27 +89,27 @@ There isn't many snippets so any suggestions for snippets would be appreciated
 ## Contribute
 
 You can open a pull request anytime and I will look into it <br>
-I suggest seeing the [vscode snippets documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets "VSCode Snippets Documentation") before you open a pull request
+I suggest seeing the [vscode snippets documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets "VSCode Snippets Documentation") before you open a pull request
 
 ## Release Notes
 
 ### 1.0.0
 
-Initial release of discord.py-snippets
+- Initial release of discord.py-snippets
 
 ### 1.0.1
 
-Fix some bugs
+- Fixed some bugs
 
 ### 1.1.0
 
-Add 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp` <br>
-Add more info in the readme file
+- Added 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp` <br>
+- Added more info in the readme file
 
 ### 1.2.0
 
-- Add not shadowing command snippets (for function names for commands that are already defined)
-- Add embed snippets
+- Added not shadowing command snippets (for function names for commands that are already defined)
+- Added embed snippets
   - embed
   - field
   - footer
@@ -117,11 +119,20 @@ Add more info in the readme file
 
 ### 1.2.1
 
-- Fix a issue in the `!emb` snippet where there were double commas
+- Fixed a issue in the `!emb` snippet where there were double commas
 
 ### 1.2.2
 
-- Fix a issue in the `!emb` snippet where there was a : where there shouldn't be one
+- Fixed a issue in the `!emb` snippet where there was a : where there shouldn't be one
+
+### 1.3.0
+
+- Added Group Template `!grp`
+- Added Group command Template `!grpcmd`
+- Made event names always start with `on_`
+- Made it easier to add commands with aliases
+- Changed the command in `!dpstrt` from `test` to `hello`
+- Made it easier to know what a value is for
 
 ### Extensions in the screenshots
 
