@@ -199,5 +199,52 @@
         "body": [
             "${1:embed}.set_image(url=\"$2\")"
         ]
+    },
+    "discord.py Owner Only check template": {
+        "prefix": "!owneronly",
+        "body": [
+            "@commands.is_owner()"
+        ]
+    },
+    "discord.py NSFW Only check template": {
+        "prefix": "!nsfwonly",
+        "body": [
+            "@commands.is_nsfw()"
+        ]
+    },
+    "discord.py Cooldown decorator template": {
+        "prefix": "!cooldown",
+        "body": [
+            "@commands.cooldown(${1:rate}, ${2:per}, commands.BucketType.${4|user,default,channel,member,guild,category,role|})"
+        ]
+    },
+    "discord.py has_permissions template": {
+        "prefix": "!hasperms",
+        "body": [
+            "@commands.has_permissions(${1:permission_name}=True)"
+        ]
+    },
+    "discord.py wait_for template for on_reaction_add": {
+        "prefix": "!waitforreaction",
+        "body": [
+            "try:",
+            "    reaction, user = await ${1|bot,client,self.bot,self.client|}.wait_for('reaction_add', check=lambda r, u: ${2:u == ctx.author and r.message.channel.id == ctx.channel.id}, timeout=${3|15,30,45,60,120,300,900|})",
+            "except asyncio.TimeoutError:",
+            "    return await ctx.send(\"You didn't respond\")",
+            "else:",
+            "    $0"
+        ]
+    },
+
+    "discord.py wait_for template for on_message": {
+        "prefix": "!waitformessage",
+        "body": [
+            "try:",
+            "    message = await ${1|bot,client,self.bot,self.client|}.wait_for('message', check=lambda m: ${2:m.author == ctx.author and m.channel.id == ctx.channel.id}, timeout=${3|15,30,45,60,120,300,900|})",
+            "except asyncio.TimeoutError:",
+            "    return await ctx.send(\"You didn't respond\")",
+            "else:",
+            "    $0"
+        ]
     }
 }

@@ -1,15 +1,18 @@
-
-# discord-py-snippets README
-
 # What is discord-py-snippets
 
 A simple snippets extension for the [discord.py](https://discordpy.readthedocs.io/en/latest/ "discord.py Documentation") package for [python](https://www.python.org "python.org")
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets">
-    <img alt="VS Code Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/WasiMaster.discord-py-snippets"></a>
+    <img alt="VS Code Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/WasiMaster.discord-py-snippets">
+  </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets">
-    <img alt="VS Code Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/WasiMaster.discord-py-snippets"></a>
+    <img alt="VS Code Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/WasiMaster.discord-py-snippets">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets#review-details">
+    <img alt="VS Code Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/r/WasiMaster.discord-py-snippets">
+  </a>
+
 </p>
 
 ## Features
@@ -65,6 +68,8 @@ This extension contributes the following settings:
 | Cog Not Shadowing Command Template          |  `!cgunscmd` | A basic command template that doesn't shadow another function for cogs                                              |
 | Group Template                              |    `!grp`    | A group template (Can be used in cogs)                                                                              |
 | Group Command Template                      |   `!grpcmd`  | A basic group command template (Can be used in cogs)                                                                |
+| Wait for reaction Template                  | `!waitforreaction` | A wait for template for on_reaction_add
+| Wait for message Template                   | `!waitformessage` | A wait for template for on_message
 
 ### Embed Snippets
 
@@ -77,10 +82,22 @@ This extension contributes the following settings:
 | Embed Thumbnail Template                    |  `!embthumb` | Adds a image to a embed      |
 | Embed Image Template                        |  `!embimg`   | Adds a thumbnail to a embed  |
 
+### Check Snippets
+
+| Name                                        | Prefix       | Description                           |
+|---------------------------------------------|--------------|---------------------------------------|
+| Owner only check Template                   | `!owneronly` | Sets a command as owner_only          |
+| NSFW only check Template                    | `!nsfwonly`  | Sets a command as nsfw only           |
+| Has Permissions check Template              | `!hasperms`  | makes a command require a permission  |
+
+
 ## Tips and Tricks
 
 - Use Tab to navigate between required inputs
-- Once a input is focused on, press tab again to skip it if you don't want to add that
+- Use Shift+Tab to edit the previous input
+- Once a input is focused on, press backspace and then press tab to skip it if you don't want to add that
+- Once a input is focused on, press tab to skip and keep the default value
+- If you don't want something, you can press backspace to remove it
 
 ## Known Issues
 
@@ -88,7 +105,7 @@ There isn't many snippets so any suggestions for snippets would be appreciated
 
 ## Contribute
 
-You can open a pull request anytime and I will look into it <br>
+You can open a pull request anytime and I will look into it\
 I suggest seeing the [vscode snippets documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets "VSCode Snippets Documentation") before you open a pull request
 
 ## Release Notes
@@ -103,7 +120,7 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 
 ### 1.1.0
 
-- Added 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp` <br>
+- Added 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp`\
 - Added more info in the readme file
 
 ### 1.2.0
@@ -133,6 +150,20 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 - Made it easier to add commands with aliases
 - Changed the command in `!dpstrt` from `test` to `hello`
 - Made it easier to know what a value is for
+
+### 1.3.1
+
+- Fixed a bug in `!cgcmd` where the aliases field would have a unnecessary comma
+
+### 1.4.0
+
+- Changed the `!cog` snippet to use the current file name as the cog name, thanks to QuaKe
+- Added `!owner_only` check
+- Added `!nsfw_only` check
+- Added `!hasperms` check
+- Added `!cooldown` decorator
+- Added `!waitforreaction` snippet
+- Added `!waitformessage` snippet
 
 ### Extensions in the screenshots
 

@@ -42,3 +42,17 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 - Made it easier to add commands with aliases
 - Changed the command in `!dpstrt` from `test` to `hello`
 - Made it easier to know what a value is for
+
+### [1.3.1]
+
+- Fixed a bug in `!cgcmd` where the aliases field would have a unnecessary comma
+
+### [1.4.0]
+
+- Changed the `!cog` snippet to use the current file name as the cog name, thanks to QuaKe
+- Added `!owner_only` check
+- Added `!nsfw_only` check
+- Added `!hasperms` check
+- Added `!cooldown` decorator
+- Added `!waitforreaction` snippet
+- Added `!waitformessage` snippet
