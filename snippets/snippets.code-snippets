@@ -78,7 +78,7 @@
             "from discord.ext import commands",
             "",
             "",
-            "class ${1:CogName}(commands.Cog):",
+            "class ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}(commands.Cog):",
             "    def __init__(self, bot):",
             "        self.bot = bot",
             "",
