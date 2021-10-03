@@ -70,6 +70,7 @@ This extension contributes the following settings:
 | Group Command Template                      |   `!grpcmd`  | A basic group command template (Can be used in cogs)                                                                |
 | Wait for reaction Template                  | `!waitforreaction` | A wait for template for on_reaction_add
 | Wait for message Template                   | `!waitformessage` | A wait for template for on_message
+| Discord based exception                     | `!excpt`     | A basic exception template based on a discord error
 
 ### Embed Snippets
 
@@ -90,6 +91,13 @@ This extension contributes the following settings:
 | NSFW only check Template                    | `!nsfwonly`  | Sets a command as nsfw only           |
 | Has Permissions check Template              | `!hasperms`  | makes a command require a permission  |
 
+### UI
+
+| Name                                        | Prefix       | Description                           |
+|---------------------------------------------|--------------|---------------------------------------|
+| Button                                      | `!button`    | A basic button                        |
+| Custom Button                               | `!cbutton`   | A button with a custom constructor    |
+| Select                                      | `!select`    | A basic select                        |
 
 ## Tips and Tricks
 
@@ -165,6 +173,12 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 - Added `!waitforreaction` snippet
 - Added `!waitformessage` snippet
 
+### 1.4.1
+
+- Added UI Category with `!button`, `!cbutton` and `!select`
+- Added `!excpt` snippet
+- Fixed indendation in `!embedhelp`
+
 ### Extensions in the screenshots
 
 - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) by [monokai](https://marketplace.visualstudio.com/publishers/monokai)
@@ -176,5 +190,6 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) by [Microsoft](https://marketplace.visualstudio.com/publishers/Microsoft)
 
 -----------------------------------------------------------------------------------------------------------
+
 
 **Enjoy!**

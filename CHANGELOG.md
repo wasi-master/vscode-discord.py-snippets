@@ -56,3 +56,10 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 - Added `!cooldown` decorator
 - Added `!waitforreaction` snippet
 - Added `!waitformessage` snippet
+
+
+### [1.4.1]
+
+- Added UI Category with `!button`, `!cbutton` and `!select`
+- Added `!excpt` snippet
+- Fixed indendation in `!embedhelp`
