@@ -247,7 +247,7 @@
             "    $0"
         ]
     },
-    
+
     "discord.py Exception":{
 		"prefix": "!except",
 		"body": [
@@ -258,28 +258,28 @@
 		],
         "description": "Add a basic exception."
 	},
-	
+
 	"discord.py UI Button":{
 		"prefix": "!button",
 		"body": [
 			"class ${1:My}Button(discord.ui.Button):",
 			"",
 			"    async def callback(self, interaction: discord.Interaction):",
-			"        ${2:return await super().callback(interaction)}" 
+			"        ${2:return await super().callback(interaction)}"
 		],
         "description": "Add a basic button."
 	},
-	
+
 
     "discord.py Custom UI Button":{
 		"prefix": "!cbutton",
 		"body": [
-			"class ${1:My}Button(discord.ui.Button):", 
+			"class ${1:My}Button(discord.ui.Button):",
 			"",
             "    def __init__(self, *, style: ButtonStyle = ..., label: Optional[str] = None,",
             "                disabled: bool = False, custom_id: Optional[str] = None,",
             "                url: Optional[str] = None, emoji: Optional[Union[str, Emoji, PartialEmoji]] = None,",
-            "                row: Optional[int] = None, ${2:argname}: ${3:_type}):", 
+            "                row: Optional[int] = None, ${2:argname}: ${3:_type}):",
             "        super().__init__(style=style, label=label, disabled=disabled,",
             "                        custom_id=custom_id, url=url, emoji=emoji, row=row, $2=$2)",
             "",
@@ -293,7 +293,7 @@
 	"discord.py UI Select":{
 		"prefix": "!select",
 		"body": [
-			"class ${1:My}Select(discord.ui.Select):", 
+			"class ${1:My}Select(discord.ui.Select):",
 			"",
 			"   async def callback(self, interaction: discord.Interaction):",
 			"       ${2:return await super().callback(interaction)}"
@@ -302,4 +302,3 @@
 	},
 
 }
-
