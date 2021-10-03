@@ -176,7 +176,7 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 ### 1.5.0
 
 - Added UI Category with `!button`, `!cbutton` and `!select`
-- Added `!excpt` snippet
+- Added `!except` snippet
 - Fixed indendation in `!embedhelp`
 
 ### Extensions in the screenshots
