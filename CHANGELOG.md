@@ -61,5 +61,5 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 ### [1.5.0]
 
 - Added UI Category with `!button`, `!cbutton` and `!select`
-- Added `!excpt` snippet
+- Added `!except` snippet
 - Fixed indendation in `!embedhelp`
