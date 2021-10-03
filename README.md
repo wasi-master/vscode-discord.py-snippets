@@ -70,7 +70,7 @@ This extension contributes the following settings:
 | Group Command Template                      |   `!grpcmd`  | A basic group command template (Can be used in cogs)                                                                |
 | Wait for reaction Template                  | `!waitforreaction` | A wait for template for on_reaction_add
 | Wait for message Template                   | `!waitformessage` | A wait for template for on_message
-| Discord based exception                     | `!excpt`     | A basic exception template based on a discord error
+| Discord based exception                     | `!except`    | A basic exception template based on a discord error
 
 ### Embed Snippets
 
