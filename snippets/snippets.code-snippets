@@ -151,12 +151,12 @@
     "discord.py Embed Help": {
         "prefix": "!embedhelp",
         "body": [
-            "class MyNewHelp(commands.MinimalHelpCommand):",
-            "async def send_pages(self):",
-            "    destination = self.get_destination()",
-            "    for page in self.paginator.pages:",
-            "        embed = discord.Embed(description=page)",
-            "        await destination.send(embed=embed)"
+            "class ${1:MyNew}Help(commands.MinimalHelpCommand):",
+            "   async def send_pages(self):",
+            "       destination = self.get_destination()",
+            "       for page in self.paginator.pages:",
+            "           embed = discord.Embed(description=page)",
+            "           await destination.send(embed=embed)"
         ],
         "description": "A custom help command implementation that modifies the default help and uses embed"
     },
