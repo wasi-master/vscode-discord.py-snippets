@@ -1,6 +1,7 @@
 # Change Log
 
-All notable changes to the "discord-py-snippets" extension will be documented in this file.
+All notable changes to the "discord-py-snippets" extension will be documented in
+this file.
 
 ## [1.0.0]
 
@@ -17,7 +18,8 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 ## [1.2.0]
 
-- Added not shadowing command snippets (for function names for commands that are already defined eg. eval)
+- Added not shadowing command snippets (for function names for commands that are
+  already defined eg. eval)
 - Added embed snippets
   - embed
   - field
@@ -32,7 +34,8 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 ### [1.2.2]
 
-- Fixed an issue in the `!emb` snippet where there was a : where there shouldn't be one
+- Fixed an issue in the `!emb` snippet where there was a : where there shouldn't
+  be one
 
 ### [1.3.0]
 
@@ -49,7 +52,8 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 ### [1.4.0]
 
-- Changed the `!cog` snippet to use the current file name as the cog name, thanks to QuaKe
+- Changed the `!cog` snippet to use the current file name as the cog name,
+  thanks to QuaKe
 - Added `!owner_only` check
 - Added `!nsfw_only` check
 - Added `!hasperms` check
