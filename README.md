@@ -191,5 +191,4 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 
 -----------------------------------------------------------------------------------------------------------
 
-
 **Enjoy!**
