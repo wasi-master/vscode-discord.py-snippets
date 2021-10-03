@@ -249,7 +249,7 @@
     },
     
     "discord.py Exception":{
-		"prefix": "!excpt",
+		"prefix": "!except",
 		"body": [
 			"class ${1:My}Error(${2:CommandError}):",
 			"   \"\"\"${3:Error Description}\"\"\"",
