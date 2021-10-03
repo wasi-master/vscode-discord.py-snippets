@@ -12,7 +12,7 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 ## [1.1.0]
 
-- Added 3 new snippets, `!gbchk`, `cgchk` & `!embedhelp`
+- Added 3 new snippets, `!gbchk`, `!cgchk` & `!embedhelp`
 - Added more info in the readme file
 
 ## [1.2.0]
@@ -28,11 +28,11 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 
 ### [1.2.1]
 
-- Fixed a issue in the `!emb` snippet where there were double commas
+- Fixed an issue in the `!emb` snippet where there were double commas
 
 ### [1.2.2]
 
-- Fixed a issue in the `!emb` snippet where there was a : where there shouldn't be one
+- Fixed an issue in the `!emb` snippet where there was a : where there shouldn't be one
 
 ### [1.3.0]
 
