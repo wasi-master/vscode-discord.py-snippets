@@ -57,7 +57,6 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 - Added `!waitforreaction` snippet
 - Added `!waitformessage` snippet
 
-
 ### [1.5.0]
 
 - Added UI Category with `!button`, `!cbutton` and `!select`
