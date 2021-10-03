@@ -95,9 +95,9 @@ This extension contributes the following settings:
 
 | Name                                        | Prefix       | Description                           |
 |---------------------------------------------|--------------|---------------------------------------|
-| Button                                      | `!button`    | A basic button                        |
-| Custom Button                               | `!cbutton`   | A button with a custom constructor    |
-| Select                                      | `!select`    | A basic select                        |
+| Button                                      |  `!button`   | A basic button                        |
+| Custom Button                               |  `!cbutton`  | A button with a custom constructor    |
+| Select                                      |  `!select`   | A basic select                        |
 
 ## Tips and Tricks
 
