@@ -173,7 +173,7 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 - Added `!waitforreaction` snippet
 - Added `!waitformessage` snippet
 
-### 1.4.1
+### 1.5.0
 
 - Added UI Category with `!button`, `!cbutton` and `!select`
 - Added `!excpt` snippet
