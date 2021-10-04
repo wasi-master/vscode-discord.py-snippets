@@ -70,6 +70,7 @@ This extension contributes the following settings:
 | Group Command Template                      |   `!grpcmd`  | A basic group command template (Can be used in cogs)                                                                |
 | Wait for reaction Template                  | `!waitforreaction` | A wait for template for on_reaction_add
 | Wait for message Template                   | `!waitformessage` | A wait for template for on_message
+| Discord based exception                     | `!except`    | A basic exception template based on a discord error
 
 ### Embed Snippets
 
@@ -90,6 +91,13 @@ This extension contributes the following settings:
 | NSFW only check Template                    | `!nsfwonly`  | Sets a command as nsfw only           |
 | Has Permissions check Template              | `!hasperms`  | makes a command require a permission  |
 
+### UI
+
+| Name                                        | Prefix       | Description                           |
+|---------------------------------------------|--------------|---------------------------------------|
+| Button                                      |  `!button`   | A basic button                        |
+| Custom Button                               |  `!cbutton`  | A button with a custom constructor    |
+| Select                                      |  `!select`   | A basic select                        |
 
 ## Tips and Tricks
 
@@ -164,6 +172,12 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 - Added `!cooldown` decorator
 - Added `!waitforreaction` snippet
 - Added `!waitformessage` snippet
+
+### 1.5.0
+
+- Added UI Category with `!button`, `!cbutton` and `!select`
+- Added `!except` snippet
+- Fixed indendation in `!embedhelp`
 
 ### Extensions in the screenshots
 
