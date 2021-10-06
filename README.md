@@ -179,6 +179,10 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 - Added `!except` snippet
 - Fixed indendation in `!embedhelp`
 
+### 1.5.1
+
+- Added a `on_ready` event in the `!dpstrt` snippet
+
 ### Extensions in the screenshots
 
 - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode) by [monokai](https://marketplace.visualstudio.com/publishers/monokai)
