@@ -99,18 +99,18 @@
     "discord.py Group Template": {
         "prefix": "!grp",
         "body": [
-            "@${1|bot,client,commands|}.group(invoke_without_subcommnads=True${3:, aliases=[\"$4\"]})",
-            "async def ${2:group_name}(self, ctx$11):",
+            "@${1|bot,client,commands|}.group(invoke_without_${3|subcommands,commands|}=${4|True,False|}, name=\"${5:groupcommand_name}\" ${6:, aliases=[\"$7\"]})",
+            "async def ${2:group_name}(self, ctx$14):",
             "    await ctx.send(\"$0\")",
             "",
             "",
-            "@${2:group_name}.command(name=\"${5:subcommand_name}\"${6:, aliases=[\"$7\"]})",
-            "async def $2_${5:subcommand_name}(self, ctx$12):",
+            "@${2:group_name}.command(name=\"${8:subcommand_name}\"${9:, aliases=[\"$10\"]})",
+            "async def $2_${8:subcommand_name}(self, ctx$15):",
             "    await ctx.send(\"\")",
             "",
             "",
-            "@${2:group_name}.command(name=\"${8:subcommand_name}\"${9:, aliases=[\"$10\"]})",
-            "async def $2_${8:subcommand_name}(self, ctx$13):",
+            "@${2:group_name}.command(name=\"${11:subcommand_name}\"${12:, aliases=[\"$13\"]})",
+            "async def $2_${11:subcommand_name}(self, ctx$16):",
             "    await ctx.send(\"\")"
         ],
         "description": "A group template"
