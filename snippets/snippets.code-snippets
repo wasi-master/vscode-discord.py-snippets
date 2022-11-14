@@ -99,7 +99,7 @@
     "discord.py Group Template": {
         "prefix": "!grp",
         "body": [
-            "@${1|bot,client,commands|}.group(invoke_without_${3|subcommands,commands|}=${4|True,False|}, name=\"${5:groupcommand_name}\" ${6:, aliases=[\"$7\"]})",
+            "@${1|bot,client,commands|}.group(invoke_without_${3|subcommand,command|}=${4|True,False|}, name=\"${5:groupcommand_name}\" ${6:, aliases=[\"$7\"]})",
             "async def ${2:group_name}(self, ctx$14):",
             "    await ctx.send(\"$0\")",
             "",
