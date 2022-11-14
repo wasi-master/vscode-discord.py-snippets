@@ -66,3 +66,16 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 ### [1.5.1]
 
 - Added a `on_ready` event in the `!dpstrt` snippet
+- Fix LICENSE year
+
+### [1.5.2]
+
+- Small fix
+
+### [1.5.3]
+
+- Fix `!grpcmd` snippet
+
+### [1.5.4]
+
+- Fix `!grpcmd` snippet
