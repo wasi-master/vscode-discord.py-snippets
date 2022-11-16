@@ -257,7 +257,7 @@
     "discord.py embed page reaction template": {
         "prefix": "!embpagere",
         "body": [
-            "# note : variable per page can be taken from the parameter command that you created",
+            "# Variable per page can be taken from the parameter command that you created",
             "emoji_nextpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$2\")",
             "emoji_backpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$4\")",
             "emoji_firstpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$5\")",

@@ -74,14 +74,16 @@ This extension contributes the following settings:
 
 ### Embed Snippets
 
-| Name                                        | Prefix       | Description                  |
-|---------------------------------------------|--------------|------------------------------|
-| Embed Template                              |   `!emb`     | Makes a Embed                |
-| Embed Field Template                        | `!embfield`  | Adds a field to a embed      |
-| Embed Footer Template                       |  `!embfoot`  | Adds a footer to a embed     |
-| Embed Author Template                       | `!embauthor` | Adds a author to a embed     |
-| Embed Thumbnail Template                    |  `!embthumb` | Adds a image to a embed      |
-| Embed Image Template                        |  `!embimg`   | Adds a thumbnail to a embed  |
+| Name                                        | Prefix        | Description                         |
+|---------------------------------------------|---------------|-------------------------------------|
+| Embed Template                              |    `!emb`     | Makes a Embed                       |
+| Embed Field Template                        |  `!embfield`  | Adds a field to a embed             |
+| Embed Footer Template                       |   `!embfoot`  | Adds a footer to a embed            |
+| Embed Author Template                       |  `!embauthor` | Adds a author to a embed            |
+| Embed Thumbnail Template                    |   `!embthumb` | Adds a image to a embed             |
+| Embed Image Template                        |   `!embimg`   | Adds a thumbnail to a embed         |
+| Embed Page Reaction Template                |  `!embpagere` | Makes a embed with page navigation  |
+
 
 ### Check Snippets
 
@@ -182,6 +184,28 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 ### 1.5.1
 
 - Added a `on_ready` event in the `!dpstrt` snippet
+
+### 1.5.1
+
+- Added a `on_ready` event in the `!dpstrt` snippet
+- Fix LICENSE year
+
+### 1.5.2
+
+- Small fix
+
+### 1.5.3
+
+- Fix `!grpcmd` snippet
+
+### 1.5.4
+
+- Fix `!grpcmd` snippet
+
+### 1.6.0
+
+- Add `!embpagere` snippet
+
 
 ### Extensions in the screenshots
 

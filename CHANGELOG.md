@@ -79,3 +79,7 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 ### [1.5.4]
 
 - Fix `!grpcmd` snippet
+
+### [1.6.0]
+
+- Add `!embpagere` snippet

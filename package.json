@@ -2,7 +2,7 @@
     "name": "discord-py-snippets",
     "displayName": "discord.py Code Snippets",
     "description": "Code snippets for the discord.py package in python",
-    "version": "1.5.4",
+    "version": "1.6.0",
     "publisher": "WasiMaster",
     "repository": {
         "type": "git",
