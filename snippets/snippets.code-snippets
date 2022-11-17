@@ -230,6 +230,12 @@
             "@commands.has_permissions(${1:permission_name}=True)"
         ]
     },
+    "discord.py guild_only template": {
+        "prefix": "!guild_only",
+        "body": [
+            "@commands.guild_only()",
+        ]
+    },
     "discord.py wait_for template for on_reaction_add": {
         "prefix": "!waitforreaction",
         "body": [
@@ -241,7 +247,6 @@
             "    $0"
         ]
     },
-
     "discord.py wait_for template for on_message": {
         "prefix": "!waitformessage",
         "body": [
@@ -253,7 +258,6 @@
             "    $0"
         ]
     },
-
     "discord.py embed page reaction template": {
         "prefix": "!embpagere",
         "body": [
@@ -284,59 +288,59 @@
             "        await msg.add_reaction(bt)",
             "    except:",
             "        pass",
-            "try:",
-            "    reaction, user = await ${1|bot,client,self.bot|}.wait_for('reaction_add', check=lambda r, u: ${13:u == ctx.author and r.message.channel.id == ctx.channel.id and and r.emoji in buttons}, timeout=${14|15,30,45,60,120,300,900|})",
-            "except asyncio.TimeoutError:",
-            "    for btn in buttons:",
-            "        try:",
-            "            await msg.clear_reaction(btn)",
-            "        except:",
-            "            pass",
-            "else:",
-            "    previous_page = curent",
-            "    if reaction.emoji == buttons[0]:",
-            "        curent = 0",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[1]:",
-            "        if curent > 0:",
-            "            curent -= 1",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        if curent != previous_page:",
-            "            await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[3]:",
-            "        if curent < num_of_${10:embeds} - 1:",
-            "            curent += 1",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        if curent != previous_page:",
-            "            await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[4]:",
-            "        curent = num_of_${10:embeds} - 1",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        if curent != previous_page:",
-            "            await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[2]:",
-            "        await msg.remove_reaction(buttons[2], ctx.author)",
-            "        for btns in buttons:",
+            "while True:",
+            "    try:",
+            "        reaction, user = await ${1|bot,client,self.bot|}.wait_for('reaction_add', check=lambda r, u: ${13:u == ctx.author and r.message.channel.id == ctx.channel.id and and r.emoji in buttons}, timeout=${14|15,30,45,60,120,300,900|})",
+            "    except asyncio.TimeoutError:",
+            "        for btn in buttons:",
             "            try:",
-            "                await msg.clear_reaction(btns)",
+            "                await msg.clear_reaction(btn)",
             "            except:",
             "                pass",
+            "    else:",
+            "        previous_page = curent",
+            "        if reaction.emoji == buttons[0]:",
+            "            curent = 0",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            await msg.edit(embed=${10:embeds}[curent])",
+            "        elif reaction.emoji == buttons[1]:",
+            "            if curent > 0:",
+            "                curent -= 1",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            if curent != previous_page:",
+            "                await msg.edit(embed=${10:embeds}[curent])",
+            "        elif reaction.emoji == buttons[3]:",
+            "            if curent < num_of_${10:embeds} - 1:",
+            "                curent += 1",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            if curent != previous_page:",
+            "                await msg.edit(embed=${10:embeds}[curent])",
+            "        elif reaction.emoji == buttons[4]:",
+            "            curent = num_of_${10:embeds} - 1",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            if curent != previous_page:",
+            "                await msg.edit(embed=${10:embeds}[curent])",
+            "        elif reaction.emoji == buttons[2]:",
+            "            await msg.remove_reaction(buttons[2], ctx.author)",
+            "            for btns in buttons:",
+            "                try:",
+            "                    await msg.clear_reaction(btns)",
+            "                except:",
+            "                    pass",
         ]
     },
-
     "discord.py Exception":{
 		"prefix": "!except",
 		"body": [
@@ -347,7 +351,6 @@
 		],
         "description": "Add a basic exception."
 	},
-
 	"discord.py UI Button":{
 		"prefix": "!button",
 		"body": [
@@ -358,8 +361,6 @@
 		],
         "description": "Add a basic button."
 	},
-
-
     "discord.py Custom UI Button":{
 		"prefix": "!cbutton",
 		"body": [
@@ -378,7 +379,6 @@
 		],
         "description": "Add a button with a custom constructor.."
 	},
-
 	"discord.py UI Select":{
 		"prefix": "!select",
 		"body": [
