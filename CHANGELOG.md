@@ -83,3 +83,8 @@ All notable changes to the "discord-py-snippets" extension will be documented in
 ### [1.6.0]
 
 - Add `!embpagere` snippet
+
+### [1.7.0]
+
+- Add `!guildonly` snippet
+- Fix `!embpagere` snippet

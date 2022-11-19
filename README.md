@@ -87,11 +87,12 @@ This extension contributes the following settings:
 
 ### Check Snippets
 
-| Name                                        | Prefix       | Description                           |
-|---------------------------------------------|--------------|---------------------------------------|
-| Owner only check Template                   | `!owneronly` | Sets a command as owner_only          |
-| NSFW only check Template                    | `!nsfwonly`  | Sets a command as nsfw only           |
-| Has Permissions check Template              | `!hasperms`  | makes a command require a permission  |
+| Name                                        | Prefix       | Description                                       |
+|---------------------------------------------|--------------|---------------------------------------------------|
+| Owner only check Template                   | `!owneronly` | Sets a command as owner_only                      |
+| NSFW only check Template                    | `!nsfwonly`  | Sets a command as nsfw only                       |
+| Has Permissions check Template              | `!hasperms`  | makes a command require a permission              |
+| Guild Only check Template                   | `!guildonly` | makes a command require the user to be in a guld  |
 
 ### UI
 
@@ -205,6 +206,11 @@ I suggest seeing the [vscode snippets documentation](https://code.visualstudio.c
 ### 1.6.0
 
 - Add `!embpagere` snippet
+
+### 1.7.0
+
+- Add `!guildonly` snippet
+- Fix `!embpagere` snippet
 
 
 ### Extensions in the screenshots
