@@ -230,6 +230,12 @@
             "@commands.has_permissions(${1:permission_name}=True)"
         ]
     },
+    "discord.py guild_only template": {
+        "prefix": "!guildonly",
+        "body": [
+            "@commands.guild_only()",
+        ]
+    },
     "discord.py wait_for template for on_reaction_add": {
         "prefix": "!waitforreaction",
         "body": [
@@ -241,7 +247,6 @@
             "    $0"
         ]
     },
-
     "discord.py wait_for template for on_message": {
         "prefix": "!waitformessage",
         "body": [
@@ -253,90 +258,89 @@
             "    $0"
         ]
     },
-
     "discord.py embed page reaction template": {
         "prefix": "!embpagere",
         "body": [
             "# Variable per page can be taken from the parameter command that you created",
             "emoji_nextpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$2\")",
-            "emoji_backpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$4\")",
-            "emoji_firstpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$5\")",
-            "emoji_lastpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$6\")",
-            "emoji_lock = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$7\")",
-            "${8:formart_lb} = []",
-            "for x in data:",
-            "    ${8:formart_lb}.append(\"$9\")",
-            "num_of_${10:embeds} = ceil((len(${8:formart_lb}) + 1) / ${15|perpage,1,2,3,4,5,6,7,8,9,10|})",
-            "${10:embeds} = []",
-            "page_format = '(Page {}/{})'",
-            "for i in range(1, num_of_${10:embeds} + 1):",
-            "    ${10:embeds}.append(discord.Embed($10).set_footer(text=page_format.format(i, num_of_${10:embeds})))",
-            "${11:embed_index} = 0",
-            "for index, element in enumerate(${10:formart_lb}):",
-            "    ${10:embeds}[${11:embed_index}].add_field(name=f'**{index + 1}.**', value='{}'.format(element), inline=${12|True,False|})",
-            "    if (index + 1) % ${15|perpage,1,2,3,4,5,6,7,8,9,10|} == 0:",
-            "        ${11:embed_index} += 1",
+            "emoji_backpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$3\")",
+            "emoji_firstpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$4\")",
+            "emoji_lastpage = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$5\")",
+            "emoji_lock = discord.utils.get(${1|bot,client,self.bot|}.emojis, name=\"$6\")",
+			"${7:formart_lb} = []",
+			"for x in data:",
+            "    ${7:formart_lb}.append(\"${8:this is for the embed description}\")",
+			"num_of_${9:embeds} = ceil((len(${7:formart_lb}) + 1) / ${10|perpage,1,2,3,4,5,6,7,8,9,10|})",
+			"${9:embeds} = []",
+			"page_format = '(Page {}/{})'",
+			"for i in range(1, num_of_${9:embeds} + 1):",
+			"    ${9:embeds}.append(discord.Embed(${11:\"this is for the description on each embed\"}).set_footer(text=page_format.format(i, num_of_${9:embeds})))",
+			"${12:embed_index} = 0",
+			"for ${13:index}, ${14:element} in enumerate(${7:formart_lb}):",
+			"    ${9:embeds}[${12:embed_index}].add_field(name=f'**{${13:index} + 1}.**', value='{}'.format(${14:element}), inline=${15|True,False|})",
+			"    if (${13:index} + 1) % ${10|perpage,1,2,3,4,5,6,7,8,9,10|} == 0:",
+			"        ${12:embed_index} += 1",
             "buttons = [emoji_firstpage,emoji_backpage,emoji_lock,emoji_nextpage,emoji_lastpage]",
             "curent = 0",
-            "msg = await ctx.send(embed=${10:embeds}[curent])",
+            "msg = await ctx.send(embed=${9:embeds}[curent])",
             "for bt in buttons:",
             "    try:",
             "        await msg.add_reaction(bt)",
             "    except:",
             "        pass",
-            "try:",
-            "    reaction, user = await ${1|bot,client,self.bot|}.wait_for('reaction_add', check=lambda r, u: ${13:u == ctx.author and r.message.channel.id == ctx.channel.id and and r.emoji in buttons}, timeout=${14|15,30,45,60,120,300,900|})",
-            "except asyncio.TimeoutError:",
-            "    for btn in buttons:",
-            "        try:",
-            "            await msg.clear_reaction(btn)",
-            "        except:",
-            "            pass",
-            "else:",
-            "    previous_page = curent",
-            "    if reaction.emoji == buttons[0]:",
-            "        curent = 0",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[1]:",
-            "        if curent > 0:",
-            "            curent -= 1",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        if curent != previous_page:",
-            "            await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[3]:",
-            "        if curent < num_of_${10:embeds} - 1:",
-            "            curent += 1",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        if curent != previous_page:",
-            "            await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[4]:",
-            "        curent = num_of_${10:embeds} - 1",
-            "        try:",
-            "            await msg.remove_reaction(str(reaction.emoji), user)",
-            "        except:",
-            "            pass",
-            "        if curent != previous_page:",
-            "            await msg.edit(embed=${10:embeds}[curent])",
-            "    elif reaction.emoji == buttons[2]:",
-            "        await msg.remove_reaction(buttons[2], ctx.author)",
-            "        for btns in buttons:",
+            "while True:",
+            "    try:",
+            "        reaction, user = await ${1|bot,client,self.bot|}.wait_for('reaction_add', check=lambda r, u: ${16:u == ctx.author and r.message.channel.id == ctx.channel.id and r.emoji in buttons}, timeout=${17|15,30,45,60,120,300,900|})",
+            "    except asyncio.TimeoutError:",
+            "        for btn in buttons:",
             "            try:",
-            "                await msg.clear_reaction(btns)",
+            "                await msg.clear_reaction(btn)",
             "            except:",
             "                pass",
+			"    else:",
+            "        previous_page = curent",
+            "        if reaction.emoji == buttons[0]:",
+            "            curent = 0",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            await msg.edit(embed=${9:embeds}[curent])",
+            "        elif reaction.emoji == buttons[1]:",
+            "            if curent > 0:",
+            "                curent -= 1",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            if curent != previous_page:",
+            "                await msg.edit(embed=${9:embeds}[curent])",
+            "        elif reaction.emoji == buttons[3]:",
+            "            if curent < num_of_${9:embeds} - 1:",
+            "                curent += 1",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            if curent != previous_page:",
+            "                await msg.edit(embed=${9:embeds}[curent])",
+            "        elif reaction.emoji == buttons[4]:",
+            "            curent = num_of_${9:embeds} - 1",
+            "            try:",
+            "                await msg.remove_reaction(str(reaction.emoji), user)",
+            "            except:",
+            "                pass",
+            "            if curent != previous_page:",
+            "                await msg.edit(embed=${9:embeds}[curent])",
+            "        elif reaction.emoji == buttons[2]:",
+            "            await msg.remove_reaction(buttons[2], ctx.author)",
+            "            for btns in buttons:",
+            "                try:",
+            "                    await msg.clear_reaction(btns)",
+            "                except:",
+            "                    pass",
         ]
     },
-
     "discord.py Exception":{
 		"prefix": "!except",
 		"body": [
@@ -347,7 +351,6 @@
 		],
         "description": "Add a basic exception."
 	},
-
 	"discord.py UI Button":{
 		"prefix": "!button",
 		"body": [
@@ -358,8 +361,6 @@
 		],
         "description": "Add a basic button."
 	},
-
-
     "discord.py Custom UI Button":{
 		"prefix": "!cbutton",
 		"body": [
@@ -378,7 +379,6 @@
 		],
         "description": "Add a button with a custom constructor.."
 	},
-
 	"discord.py UI Select":{
 		"prefix": "!select",
 		"body": [
