@@ -389,6 +389,17 @@
 		],
         "description": "Add a basic select."
 	},
+    "discord.py Custom Context":{
+        "prefix": "!ctx",
+        "body": [
+            "from discord.ext import commands",
+            "",
+            "",
+            "class ${1:Context}(commands.Context):",
+            "    async def send(self, ctx: commands.Context):",
+            "        $0"
+        ]
+    },
 
 }
 
